@@ -1,3 +1,4 @@
+import 'package:belajaryukk/register.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -100,7 +101,12 @@ class _LoginState extends State<Login> {
                       "Belum Punya Akun?",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Register()),
+                      );
+                    },
                   ),
                 ],
               ),
