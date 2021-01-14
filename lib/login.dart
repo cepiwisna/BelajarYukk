@@ -1,3 +1,4 @@
+import 'package:belajaryukk/dashboard.dart';
 import 'package:belajaryukk/register.dart';
 import 'package:flutter/material.dart';
 
@@ -82,7 +83,7 @@ class _LoginState extends State<Login> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Register()),
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
                         );
                       }),
                   FlatButton(

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:BelajarYukk/configuration.dart';
-import 'package:BelajarYukk/screen2.dart';
+import 'package:belajaryukk/configuration.dart';
+import 'package:belajaryukk/screenjava.dart';
 import 'screencss.dart';
 
 class HomeScreen extends StatefulWidget {
