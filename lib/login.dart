@@ -80,21 +80,10 @@ class _LoginState extends State<Login> {
                       padding:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 100),
                       onPressed: () {
-                        // if (username.text == "sani" && pass.text == "123") {
-                        //   Navigator.pushReplacement(
-                        //       context,
-                        //       MaterialPageRoute(
-                        //           builder: (context) => DashBoard(
-                        //                 nama: username.text,
-                        //               )));
-                        // } else {
-                        //   AlertDialog alertDialog = new AlertDialog(
-                        //       content: new Text(
-                        //           "Username Atau Password Yang Anda Masukan Salah Atau Belum Di Masukan"));
-                        showDialog(
-                            context: context,
-                            // child: alertDialog,
-                            barrierDismissible: false);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Register()),
+                        );
                       }),
                   FlatButton(
                     child: Text(
