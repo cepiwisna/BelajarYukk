@@ -2,6 +2,8 @@ import 'package:belajaryukk/dashboard.dart';
 import 'package:belajaryukk/register.dart';
 import 'package:flutter/material.dart';
 
+import 'drawerScreen.dart';
+
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
@@ -83,7 +85,7 @@ class _LoginState extends State<Login> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                          MaterialPageRoute(builder: (context) => HomePage()),
                         );
                       }),
                   FlatButton(
@@ -103,6 +105,17 @@ class _LoginState extends State<Login> {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [DrawerScreen(), HomeScreen()],
       ),
     );
   }
