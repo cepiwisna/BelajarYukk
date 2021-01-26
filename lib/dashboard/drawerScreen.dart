@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:belajaryukk/configuration.dart';
+import 'package:belajaryukk/dashboard/configuration.dart';
 
 class DrawerScreen extends StatefulWidget {
   @override

@@ -1,7 +1,7 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:belajaryukk/login.dart';
+import 'package:belajaryukk/screens/login.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -18,7 +18,7 @@ class _SplashState extends State<Splash> {
     var waktu = const Duration(seconds: 4);
     return Timer(waktu, () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) {
-        return Login();
+        return LoginScreen();
       }));
     });
   }
