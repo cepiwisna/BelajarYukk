@@ -2,7 +2,7 @@ import 'package:belajaryukk/dashboard/configuration.dart';
 import 'package:belajaryukk/dashboard/screenjava.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'screencss.dart';
+import 'css/screencss.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
