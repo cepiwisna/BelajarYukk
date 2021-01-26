@@ -1,5 +1,5 @@
 import 'package:belajaryukk/dashboard/configuration.dart';
-import 'package:belajaryukk/dashboard/screenjava.dart';
+import 'package:belajaryukk/dashboard/html/screenhtml.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'css/screencss.dart';
