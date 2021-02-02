@@ -2,22 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:html_editor/html_editor.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class Halaman2 extends StatefulWidget {
-  Halaman2({Key key, this.title}) : super(key: key);
+class Halaman3 extends StatefulWidget {
+  Halaman3({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _Halaman2State createState() => _Halaman2State();
+  _Halaman3State createState() => _Halaman3State();
 }
 
-class _Halaman2State extends State<Halaman2> {
+class _Halaman3State extends State<Halaman3> {
   GlobalKey<HtmlEditorState> keyEditor = GlobalKey();
 
   String result = "";
   List<String> contentOfPage1 = [
     "<html lang='fr'>",
-    "\n<body>",
-    "\n\t<p>Hallo Word</p>",
-    "\n</body>",
+    "\n<head>",
+    "\n\t<h1>Hallo Word</h1>",
+    "\n</head>",
     "\n</html>",
   ];
 
@@ -45,19 +45,19 @@ class _Halaman2State extends State<Halaman2> {
                 ),
               ],
             ),
-            title: Text('Membuat Paragraf'),
+            title: Text('Membuat Heading'),
           ),
           body: TabBarView(
             children: [
               Tab(
                   child: WebView(
-                initialUrl: 'https://www.petanikode.com/html-paragraf/',
+                initialUrl: 'https://www.petanikode.com/html-heading/',
                 javascriptMode: JavascriptMode.unrestricted,
               )),
               Tab(
                   child: WebView(
                 initialUrl:
-                    'https://www.youtube.com/watch?v=Dl_bIYBc9gM&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=5/',
+                    'https://www.youtube.com/watch?v=SMetRBdIh-8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=6/',
                 javascriptMode: JavascriptMode.unrestricted,
               )),
               Tab(

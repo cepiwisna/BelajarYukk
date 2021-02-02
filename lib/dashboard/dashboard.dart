@@ -77,22 +77,23 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Container(
-              height: 220,
-              child: PageView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      child: Column(
-                        children: [
-                          Container(
-                            child: new Image.asset('images/css.png'),
-                            color: Colors.white,
-                            width: 385,
-                          ),
-                        ],
-                      ),
-                    );
-                  }),
+              margin: EdgeInsets.symmetric(vertical: 20.0),
+              height: 200.0,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    width: 300,
+                    child: new Image.asset('images/home.png'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    width: 300,
+                    child: new Image.asset('images/home2.png'),
+                  ),
+                ],
+              ),
             ),
             GestureDetector(
               onTap: () {

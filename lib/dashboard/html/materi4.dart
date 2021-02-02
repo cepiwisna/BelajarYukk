@@ -2,25 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:html_editor/html_editor.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-import '../configuration.dart';
-
-class Halaman extends StatefulWidget {
-  Halaman({Key key, this.title}) : super(key: key);
+class Halaman4 extends StatefulWidget {
+  Halaman4({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _HalamanState createState() => _HalamanState();
+  _Halaman4State createState() => _Halaman4State();
 }
 
-class _HalamanState extends State<Halaman> {
+class _Halaman4State extends State<Halaman4> {
   GlobalKey<HtmlEditorState> keyEditor = GlobalKey();
 
   String result = "";
   List<String> contentOfPage1 = [
-    "<html lang='fr'>",
-    "\n<body>",
-    "\n\t<a href='page2.html'>go to page 2</a>",
-    "\n</body>",
-    "\n</html>",
+    "<table border=" ">",
+    "\n<tr>",
+    "\n\<td>baris 1 / kolom 2</td>",
+    "\n<<td>baris 1 / kolom 3</td>",
+    "\n	</tr>",
   ];
 
   @override
@@ -28,33 +26,51 @@ class _HalamanState extends State<Halaman> {
     return Scaffold(
         body: Container(
       child: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: primaryGreen,
+            backgroundColor: (Colors.black),
+            centerTitle: true,
             bottom: TabBar(
               tabs: [
                 Tab(
-                  child: Text("Pembahasan"),
+                  child: Text("Materi"),
+                ),
+                Tab(
+                  child: Text("Video"),
                 ),
                 Tab(child: Text("Coding")),
                 Tab(
-                  child: Text("Compiler"),
+                  child: Text("Praktek"),
                 ),
               ],
             ),
-            title: Text('Tabs Demo'),
+            title: Text('Membuat Tabel'),
           ),
           body: TabBarView(
             children: [
               Tab(
                   child: WebView(
-                initialUrl:
-                    'https://www.malasngoding.com/belajar-html-dasar-pengertian-html/',
+                initialUrl: 'https://www.petanikode.com/html-tabel/',
                 javascriptMode: JavascriptMode.unrestricted,
               )),
               Tab(
-                child: Card(
+                  child: WebView(
+                initialUrl:
+                    'https://www.youtube.com/watch?v=7-QNafrXigs&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=10/',
+                javascriptMode: JavascriptMode.unrestricted,
+              )),
+              Tab(
+                child: Container(
+                  width: 300.0,
+                  height: 300.0,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Theme.of(context).primaryColor),
+                    borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(30.0),
+                        topRight: Radius.circular(30.0)),
+                  ),
                   child: Column(
                     children: <Widget>[
                       SelectableText(
@@ -65,7 +81,9 @@ class _HalamanState extends State<Halaman> {
                             contentOfPage1[4],
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            fontStyle: FontStyle.italic),
                       )
                     ],
                   ),
