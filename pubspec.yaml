@@ -65,6 +65,8 @@ flutter:
     - images/html.png
     - images/java.png
     - images/javalogo.png
+    - images/home.png
+    - images/splashnew.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
