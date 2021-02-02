@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:html_editor/html_editor.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+import '../configuration.dart';
+
 class Halaman extends StatefulWidget {
   Halaman({Key key, this.title}) : super(key: key);
   final String title;
@@ -29,6 +31,7 @@ class _HalamanState extends State<Halaman> {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: primaryGreen,
             bottom: TabBar(
               tabs: [
                 Tab(

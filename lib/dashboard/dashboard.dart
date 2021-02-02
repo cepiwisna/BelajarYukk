@@ -2,6 +2,7 @@ import 'package:belajaryukk/dashboard/configuration.dart';
 import 'package:belajaryukk/dashboard/html/screenhtml.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'css/screencss.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -109,14 +110,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              color: Colors.blueGrey[300],
+                              color: primaryGreen,
                               borderRadius: BorderRadius.circular(20),
                               boxShadow: shadowList,
                             ),
                             margin: EdgeInsets.only(top: 50),
                           ),
                           Align(
-                            child: Hero(tag: 1, child: Image.asset('images/')),
+                            child: Hero(
+                                tag: 1, child: Image.asset('images/html.png')),
                           )
                         ],
                       ),
@@ -125,10 +127,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                       height: 300,
                       child: Center(
-                        child: Text(
-                          'Java',
-                          style: TextStyle(fontSize: 50.0),
-                        ),
+                        child: Text('Java',
+                            style: GoogleFonts.mcLaren(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
+                            )),
                       ),
                       margin: EdgeInsets.only(top: 60, bottom: 20),
                       decoration: BoxDecoration(
@@ -157,14 +160,14 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              color: Colors.orange[100],
+                              color: primaryGreen,
                               borderRadius: BorderRadius.circular(20),
                               boxShadow: shadowList,
                             ),
                             margin: EdgeInsets.only(top: 50),
                           ),
                           Align(
-                            child: Image.asset('images/'),
+                            child: Image.asset('images/html.png'),
                           )
                         ],
                       ),
@@ -173,10 +176,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                       height: 300,
                       child: Center(
-                        child: Text(
-                          'CSS',
-                          style: TextStyle(fontSize: 50.0),
-                        ),
+                        child: Text('CSS',
+                            style: GoogleFonts.mcLaren(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
+                            )),
                       ),
                       margin: EdgeInsets.only(top: 60, bottom: 20),
                       decoration: BoxDecoration(

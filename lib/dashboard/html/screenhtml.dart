@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../configuration.dart';
 import 'databaru.dart';
 import 'materi2.dart';
 
@@ -14,7 +15,7 @@ class Screen2 extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
-                  color: Colors.blueGrey[200],
+                  color: primaryGreen,
                   child: Align(
                     alignment: Alignment.center,
                     child: Hero(tag: 1, child: Image.asset('images/html.png')),
@@ -31,7 +32,10 @@ class Screen2 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
                                 ListTile(
-                                  leading: Icon(Icons.album),
+                                  leading: Icon(
+                                    Icons.album,
+                                    color: primaryGreen,
+                                  ),
                                   title: Text('Materi Pertama'),
                                   subtitle: Text('Pengenalan HTML.'),
                                 ),
@@ -49,7 +53,10 @@ class Screen2 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
                                 ListTile(
-                                  leading: Icon(Icons.album),
+                                  leading: Icon(
+                                    Icons.album,
+                                    color: primaryGreen,
+                                  ),
                                   title: Text('Materi Kedua'),
                                   subtitle: Text('Belajar Paragraf.'),
                                 ),
@@ -67,7 +74,10 @@ class Screen2 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
                                 ListTile(
-                                  leading: Icon(Icons.album),
+                                  leading: Icon(
+                                    Icons.album,
+                                    color: primaryGreen,
+                                  ),
                                   title: Text('Materi Ketiga'),
                                   subtitle: Text('Membuat Heading.'),
                                 ),
@@ -85,7 +95,10 @@ class Screen2 extends StatelessWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
                                 ListTile(
-                                  leading: Icon(Icons.album),
+                                  leading: Icon(
+                                    Icons.album,
+                                    color: primaryGreen,
+                                  ),
                                   title: Text('Materi Keempat'),
                                   subtitle: Text('Membuat Tabel.'),
                                 ),
@@ -112,11 +125,16 @@ class Screen2 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
-                      icon: Icon(Icons.arrow_back_ios),
+                      icon: Icon(Icons.arrow_back_ios, color: Colors.white),
                       onPressed: () {
                         Navigator.pop(context);
                       }),
-                  IconButton(icon: Icon(Icons.share), onPressed: () {})
+                  IconButton(
+                      icon: Icon(
+                        Icons.share,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {})
                 ],
               ),
             ),
