@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:belajaryukk/dashboard/profile/profile.dart';
+// import 'package:belajaryukk/dashboard/profile/profile.dart';
 import 'package:belajaryukk/screens/login.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:belajaryukk/dashboard/configuration.dart';
@@ -103,20 +103,20 @@ class _DrawerScreenState extends State<DrawerScreen> {
               ],
             ),
           ),
-          ListTile(
-              leading: Icon(
-                FontAwesomeIcons.userAlt,
-                color: Colors.white,
-              ),
-              title: new Text("Profile",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20)),
-              onTap: () {
-                Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => Profile()));
-              }),
+          // ListTile(
+          //     leading: Icon(
+          //       FontAwesomeIcons.userAlt,
+          //       color: Colors.white,
+          //     ),
+          //     title: new Text("Profile",
+          //         style: TextStyle(
+          //             color: Colors.white,
+          //             fontWeight: FontWeight.bold,
+          //             fontSize: 20)),
+          //     onTap: () {
+          //       Navigator.of(context).pushReplacement(
+          //           MaterialPageRoute(builder: (context) => Profile()));
+          //     }),
           ListTile(
               leading: Icon(
                 Icons.input,
