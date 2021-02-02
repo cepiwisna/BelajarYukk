@@ -93,13 +93,13 @@ class _DrawerScreenState extends State<DrawerScreen> {
             padding: const EdgeInsets.only(right: 210, top: 10, bottom: 30),
             child: Column(
               children: [
-                Text(
-                  "Selpa",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
-                )
+                // Text(
+                //   "Selpa",
+                //   style: TextStyle(
+                //       color: Colors.white,
+                //       fontWeight: FontWeight.bold,
+                //       fontSize: 20),
+                // )
               ],
             ),
           ),
