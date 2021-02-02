@@ -38,7 +38,6 @@ dependencies:
   code_editor: ^1.0.0
   url_launcher: ^5.7.10
   html_editor: ^1.0.1
-  google_fonts: ^1.1.2
   webview_flutter: ^0.3.0
 
 dev_dependencies:

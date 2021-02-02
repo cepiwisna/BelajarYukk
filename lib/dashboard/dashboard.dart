@@ -2,7 +2,6 @@ import 'package:belajaryukk/dashboard/configuration.dart';
 import 'package:belajaryukk/dashboard/html/screenhtml.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'css/screencss.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -128,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: 300,
                       child: Center(
                         child: Text('Java',
-                            style: GoogleFonts.mcLaren(
+                            style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             )),
@@ -177,7 +176,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: 300,
                       child: Center(
                         child: Text('CSS',
-                            style: GoogleFonts.mcLaren(
+                            style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             )),

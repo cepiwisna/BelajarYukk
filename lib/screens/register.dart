@@ -2,7 +2,6 @@ import 'package:belajaryukk/dashboard/configuration.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'login.dart';
 
@@ -27,7 +26,7 @@ class _Register1State extends State<Register1> {
       child: Column(
         children: [
           Text("Register",
-              style: GoogleFonts.mcLaren(
+              style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               )),

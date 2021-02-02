@@ -4,7 +4,6 @@ import 'package:belajaryukk/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'reset.dart';
 import 'redirect.dart';
 
@@ -36,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           Text(
             "Login Ke Akun Anda",
-            style: GoogleFonts.mcLaren(
+            style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
