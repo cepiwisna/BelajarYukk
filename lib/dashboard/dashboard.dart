@@ -127,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Container(
                       height: 300,
                       child: Center(
-                        child: Text('Java',
+                        child: Text('HTML',
                             style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
@@ -167,7 +167,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             margin: EdgeInsets.only(top: 50),
                           ),
                           Align(
-                            child: Image.asset('images/html.png'),
+                            child: Image.asset(
+                              'images/cssss.png',
+                              height: 1200,
+                            ),
                           )
                         ],
                       ),

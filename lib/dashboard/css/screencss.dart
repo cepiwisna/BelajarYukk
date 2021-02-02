@@ -16,7 +16,7 @@ class Screencss extends StatelessWidget {
                   color: Colors.blueGrey[200],
                   child: Align(
                     alignment: Alignment.center,
-                    child: Hero(tag: 1, child: Image.asset('images/html.png')),
+                    child: Hero(tag: 1, child: Image.asset('images/cssss.png')),
                   ),
                 ),
               ),

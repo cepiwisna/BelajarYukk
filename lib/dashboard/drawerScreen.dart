@@ -119,19 +119,6 @@ class _DrawerScreenState extends State<DrawerScreen> {
               }),
           ListTile(
               leading: Icon(
-                Icons.settings,
-                color: Colors.white,
-              ),
-              title: new Text("Setting",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20)),
-              onTap: () {
-                Navigator.pop(context);
-              }),
-          ListTile(
-              leading: Icon(
                 Icons.input,
                 color: Colors.white,
               ),
